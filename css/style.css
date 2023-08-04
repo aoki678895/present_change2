@@ -7,7 +7,7 @@ body {
   justify-content: center;
   height: 100vh;
   background-color: #F3F3F3;
-  font-size: 18px;
+  font-size: 40px;
   width: 100%;
 }
 
@@ -19,7 +19,7 @@ body {
   text-align: center;
 }
 
-#changebutton{
+#changebutton {
   width: 100vw;
 }
 
@@ -39,3 +39,7 @@ button {
   /* Any other styles you want */
 }
 
+#member-fields {
+  display: flex;
+  flex-direction: column;
+}
