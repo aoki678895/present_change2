@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>プレゼント交換アプリ</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1 id="title" class="fullscreen" onclick="startApp()">プレゼント交換スタート</h1>
+        <form id="num-members-screen" style="display: none;" onsubmit="event.preventDefault(); showMemberFields();">
+            <label for="num-members">人数:</label>
+            <input id="num-members" type="number" min="1">
+            <button type="submit">次へ</button>
+        </form>
+        <form id="member-form" style="display: none;">
+            <div id="member-fields"></div>
+            <button id ="changebutton" type="button" onclick="showLoadingScreen();" onclick="exchangeGifts();">プレゼント交換</button>
+            <button type="button" onclick="backToNumMembers()">人数選択に戻る</button>
+        </form>
+        <div id="loading-screen" style="display: none;">処理中...</div>
+        <div id="results" style="display: none;"></div>
+        <button id="reset-button" style="display: none;" type="button" onclick="resetApp()">交換しなおす</button>
+
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/member.js"></script>
+</body>
+
+</html>
