@@ -39,7 +39,6 @@ button {
   /* Any other styles you want */
 }
 
-#member-fields {
-  display: flex;
-  flex-direction: column;
+input {
+  display: block;
 }
