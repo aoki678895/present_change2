@@ -32,7 +32,7 @@ function exchangeGifts() {
   for (let i = 0; i < numMembers; i++) {
       const giver = memberFields[i].value;
       const receiver = members[i];
-      resultsHTML += `<p>${giver}は${receiver}にプレゼントをあげます。</p>`;
+      resultsHTML += `<p>${giver} は ${receiver} にプレゼントをあげます。</p>`;
   }
 
   document.getElementById('loading-screen').style.display = 'none'; 
