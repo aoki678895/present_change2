@@ -22,9 +22,9 @@ function showMemberFields() {
 function showLoadingScreen() { // This is new
     document.getElementById('member-form').style.display = 'none';
     document.getElementById('loading-screen').style.display = 'block';
-    setTimeout(exchangeGifts, 2000); // Execute exchangeGifts after a 2-second delay
+    setTimeout(exchangeGifts, 3000); // Execute exchangeGifts after a 2-second delay
 }
-
+ 
 function backToNumMembers() {
     document.getElementById('member-form').style.display = 'none';
     document.getElementById('num-members-screen').style.display = 'block';

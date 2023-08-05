@@ -9,6 +9,7 @@ function generateMemberFields() {
       const input = document.createElement('input');
       input.type = 'text';
       input.value = `メンバー${i + 1}`;  // Set default value
+      input.className = 'member-name';
       memberFields.appendChild(input);
   }
 }

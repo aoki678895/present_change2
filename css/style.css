@@ -7,7 +7,6 @@ body {
   justify-content: center;
   height: 100vh;
   background-color: #F3F3F3;
-  font-size: 30px;
   width: 100%;
 }
 
@@ -39,7 +38,26 @@ button {
   /* Any other styles you want */
 }
 
-input {
+.member-name {
   display: block;
   width:100%;
+}
+
+@media screen and (min-width: 481px) {
+	.member-name{
+    display: block;
+    width:60vw;
+  }
+  #changebutton {
+    width: 60vw;
+  }
+}
+@media screen and (min-width: 960px) {
+	.member-name{
+    display: block;
+    width: 50vw;
+  }
+  #changebutton {
+    width: 50vw;
+  }
 }
